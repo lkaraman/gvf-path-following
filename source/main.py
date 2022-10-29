@@ -30,22 +30,6 @@ def plot(sym_x, sym_y, sym_md, vehicle):
     plt.ylim([-20, 20])
     ax.quiver(X, Y, U, V, linewidth=1)
 
-    ax = plt.gca()
-    yaw = np.rad2deg(vehicle.yaw)
-    car_patch = matplotlib.patches.Rectangle((vehicle.x, vehicle.y), width=vehicle.length, height=vehicle.width,
-                                       angle=yaw, facecolor=CAR,
-                                       edgecolor=CAR_OUTLINE, zorder=20)
-
-    # Shift center rectangle to match center of the car
-    car_patch.set_x(vehicle.x - (vehicle.length / 2 *
-                           np.cos(vehicle.yaw) -
-                           vehicle.width / 2 *
-                           np.sin(vehicle.yaw)))
-    car_patch.set_y(vehicle.y - (vehicle.width / 2 *
-                           np.cos(vehicle.width) +
-                           vehicle.length / 2 *
-                           np.sin(vehicle.yaw)))
-    ax.add_patch(car_patch)
 
 
 def move_sympyplot_to_axes(p, ax):
@@ -99,7 +83,6 @@ if __name__ == '__main__':
         # vehicle.show()
 
         ax = plt.gca()
-        car = ax.patches[0]
 
         yaw = np.rad2deg(vehicle.yaw)
 
