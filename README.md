@@ -3,6 +3,8 @@
 Implementation of path following algorithm given the implicit function based on 
 https://www.sciencedirect.com/science/article/pii/S2405896317318748
 
+![](example.gif)
+
 Since the mentioned algorithm requires paths to be written
 as implicit function, two ways of converting set of points
 to the implicit function are implemented:
@@ -22,6 +24,8 @@ Run test with Pytest
 [3] H.Yalcin, M.Unel and W.Wolovich, [Implicitization of Parametric Curves by Matrix Annihilation](https://www.cs.cmu.edu/~hulya/Publications/ICIP02Paper.pdf)
 
 ## TODOs
+- Fix width offset (look at plots!)
+- Add setup.py
 - Fix/simplify plotting
 - More comments in implicators
 - Tests
