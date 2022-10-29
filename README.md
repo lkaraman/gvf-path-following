@@ -29,3 +29,8 @@ Run test with Pytest
 - Fix/simplify plotting
 - More comments in implicators
 - Tests
+
+## Thank you!
+[PyEFD](https://github.com/hbldh/pyefd) - used for calculating eliptic coefficients
+
+[Multi-Purpose-MPC](https://github.com/matssteinweg/Multi-Purpose-MPC) -> used plotting functions
